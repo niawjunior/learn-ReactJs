@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
-
+import { Form, Input,Button } from 'antd';
+const FormItem = Form.Item;
 export default class ShowName extends Component {
-
 constructor(props) {
   super(props);
   
@@ -26,11 +26,15 @@ Show(e) {
   render() {
     return (
       <div>
-       <form onSubmit={this.Show}>
-       <input type="text" value={this.state.value} placeholder="input your name" onChange={this.Change}/>
-       <h1>{this.state.value}</h1>
-       <input type="submit" value="Submit" />
-       </form>
+      <Form layout="inline" onSubmit={this.Show}>
+        <FormItem>
+          <Input type="text" value={this.state.value} placeholder="input your name" onChange={this.Change}/>
+          <h1>{this.state.value}</h1>
+        </FormItem>
+        <FormItem>
+          <Button type="primary" value="Submit" htmlType="submit">Submit</Button>
+        </FormItem>
+      </Form>
       </div>
     )
   }
