@@ -122,6 +122,7 @@ class Content extends React.Component {
 class TableRow extends React.Component {
   render () {
     return (
+
       <tr>
         <td>{this.props.data_table.id}</td>
         <td>{this.props.data_table.name}</td>
