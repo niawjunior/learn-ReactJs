@@ -35,14 +35,10 @@ export default class GetApi extends React.Component {
   }
 }
 
-class TableApi extends React.Component {
-  render () {
-    return (
+const TableApi=(props)=>
       <tr>
-        <td>{this.props.data_table.title}</td>
-        <td>{this.props.data_table.author}</td>
-        <td>{this.props.data_table.points}</td>
+        <td>{props.data_table.title}</td>
+        <td>{props.data_table.author}</td>
+        <td>{props.data_table.points}</td>
       </tr>
-    )
-  }
-}
+

@@ -35,12 +35,7 @@ export default class Counter extends React.Component {
 }
 
 
-class Show extends React.Component {
-  render () {
-    return (
+const Show=(props)=>
       <div>
-        <h1 className="hello">{this.props.count}</h1>
+        <h1 className="hello">{props.count}</h1>
       </div>
-    )
-  }
-}

@@ -48,15 +48,9 @@ import React, {Component} from 'react';
   }
 }
 
-class TableRow extends React.Component {
-  render () {
-    return (
-
+const TableRow=(props)=>
       <tr>
-        <td>{this.props.data_table.id}</td>
-        <td>{this.props.data_table.name}</td>
-        <td>{this.props.data_table.age}</td>
+        <td>{props.data_table.id}</td>
+        <td>{props.data_table.name}</td>
+        <td>{props.data_table.age}</td>
       </tr>
-    )
-  }
-}
