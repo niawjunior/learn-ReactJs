@@ -20,7 +20,8 @@ Change(e) {
 
 }
 Show(e) {
-  alert(this.state.value);
+  var show_value = (this.state.value ==''?"Empty":this.state.value);
+  alert(show_value);
   e.preventDefault();
 }
   render() {
