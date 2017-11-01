@@ -18,9 +18,11 @@ export default class GetApi extends React.Component {
     return (
       <table>
         <thead>
+        <tr>
           <th>Title</th>
           <th>Author</th>
           <th>Points</th>
+        </tr>
         </thead>
         <tbody>
          {

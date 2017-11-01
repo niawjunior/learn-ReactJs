@@ -12,5 +12,5 @@ export default class Map extends React.Component {
 
 const TableList=(props)=>
 props.list.map((list) =>{
-  return  <h1 style={{ display:'inline'}}>{list}</h1>
+  return  <h1 key={list} style={{ display:'inline'}}>{list}</h1>
 })
