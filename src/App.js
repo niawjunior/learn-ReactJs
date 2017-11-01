@@ -8,11 +8,13 @@ import Clock from './Clock';
 import Event from './Event';
 import Toggle from './Toggle';
 import Login from './Login';
+import Map from './Map';
 class App extends React.Component {
 
   render() {
     return (
       <div className="container">
+        <Map />
         <Login />
         <Event />
         <Clock />
