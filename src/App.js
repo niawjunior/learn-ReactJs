@@ -7,10 +7,13 @@ import ShowName from './ShowName'
 import Clock from './Clock';
 import Event from './Event';
 import Toggle from './Toggle';
+import Login from './Login';
 class App extends React.Component {
+
   render() {
     return (
-      <div>
+      <div className="container">
+        <Login />
         <Event />
         <Clock />
         <Toggle />
