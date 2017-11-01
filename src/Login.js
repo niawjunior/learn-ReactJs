@@ -20,8 +20,8 @@ export default class Login extends React.Component {
       <Button 
         onClick={ this.Check } 
         style={{ marginTop: 20 }} 
-        type={ this.state.checkLogin ? 'primary' : 'danger' } 
-        size="large" >{ this.state.checkLogin ? 'Sign in' : 'Sign Out' }
+        type={ this.state.checkLogin ? ('primary') : ('danger') } 
+        size="large" >{ this.state.checkLogin ? ('Sign in') : ('Sign Out') }
       </Button>
       <Greeting isLoggedIn={ this.state.checkLogin } />
       </div>
