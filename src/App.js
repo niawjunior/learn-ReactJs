@@ -5,19 +5,19 @@ import Content from './Content';
 import GetApi from './GetData';
 import ShowName from './ShowName'
 import Clock from './Clock';
+import Event from './Event';
 class App extends React.Component {
   render() {
     return (
       <div>
-      <Clock />
-      <Welcome name="PASUPOL BUNSAEN" />
-      <ShowName />
-      <Counter />
-      <Content />
-        <br/>
-      <GetApi />
-
-      </div>
+        <Event />
+        <Clock />
+        <Welcome name="PASUPOL BUNSAEN" />
+        <ShowName />
+        <Counter />
+        <Content />
+        <GetApi />
+        </div>
     )
   }
 }
