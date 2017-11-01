@@ -37,7 +37,7 @@ export default class GetApi extends React.Component {
 
 const TableApi=(props)=>
       <tr>
-        <td>{props.data_table.title}</td>
+        <td style={{width:'80%'}}>{props.data_table.title}</td>
         <td>{props.data_table.author}</td>
         <td>{props.data_table.points}</td>
       </tr>

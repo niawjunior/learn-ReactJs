@@ -21,13 +21,8 @@ export default class Counter extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="hello">Hello</h1>
-        <center>
         <Button type="primary" onClick={this.count}>+</Button>
-        </center>
-        <p className="hello">STATE</p>
-        <h1 className="hello">{this.state.value}</h1>
-        <p className="hello">PROPS</p>
+        <h3> Value From State {this.state.value}</h3>
         <Show  count={this.state.value}/>
       </div>
     )
@@ -37,5 +32,5 @@ export default class Counter extends React.Component {
 
 const Show=(props)=>
       <div>
-        <h1 className="hello">{props.count}</h1>
+        <h3>Value From Props {props.count}</h3>
       </div>
