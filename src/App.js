@@ -6,12 +6,14 @@ import GetApi from './GetData';
 import ShowName from './ShowName'
 import Clock from './Clock';
 import Event from './Event';
+import Toggle from './Toggle';
 class App extends React.Component {
   render() {
     return (
       <div>
         <Event />
         <Clock />
+        <Toggle />
         <Welcome name="PASUPOL BUNSAEN" />
         <ShowName />
         <Counter />
