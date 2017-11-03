@@ -13,18 +13,22 @@ import SelectBox from './Select';
 import { Card } from 'antd';
 import NumberList from './List';
 import DocumentsFieldSet  from './DynamicInput';
+import Panel from './Panel';
 class App extends React.Component {
 
   render() {
     return (
       <div className="container">
-        <div style={{ background: '#ECECEC', padding: '20px' }}>
-        <Clock/>
-        <Card title="" bordered={false} style={{ marginTop:5}}>
-          <NumberList/>
+      <div style={{ background: '#ECECEC', padding: '20px' }}>
+            <Clock/>
+            <Card title="" bordered={false} style={{ marginTop:5}}>
+            <Panel />
             </Card>
-          <Card title="" bordered={false} style={{ marginTop:5}}>
-            <DocumentsFieldSet/>
+            <Card title="" bordered={false} style={{ marginTop:5}}>
+              <NumberList/>
+            </Card>
+            <Card title="" bordered={false} style={{ marginTop:5}}>
+              <DocumentsFieldSet/>
             </Card>
             <Card title="Text" bordered={false} style={{ marginTop:5}}>
               <Welcome name="PASUPOL BUNSAEN" />
