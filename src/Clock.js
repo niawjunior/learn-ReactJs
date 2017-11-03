@@ -2,7 +2,6 @@ import React from 'react';
 export default class Clock extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       time: new Date()
     };
@@ -23,4 +22,6 @@ export default class Clock extends React.Component {
 }
 
 const FormattedDate = (props) => 
-  <h2 style={{textAlign:'center',fontSize:25,color:'red'}}> {props.time.toLocaleTimeString()}</h2>;
+  <h2 style={{textAlign:'center',fontSize:25,color:'red'}}> 
+    {props.time.toLocaleTimeString()}
+  </h2>;

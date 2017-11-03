@@ -9,19 +9,31 @@ import Event from './Event';
 import Toggle from './Toggle';
 import Login from './Login';
 import Map from './Map';
+import SelectBox from './Select';
 import { Card } from 'antd';
+import NumberList from './List';
+import DocumentsFieldSet  from './DynamicInput';
 class App extends React.Component {
 
   render() {
     return (
       <div className="container">
         <div style={{ background: '#ECECEC', padding: '20px' }}>
-          <Clock/>
+        <Clock/>
+        <Card title="" bordered={false} style={{ marginTop:5}}>
+          <NumberList/>
+            </Card>
+          <Card title="" bordered={false} style={{ marginTop:5}}>
+            <DocumentsFieldSet/>
+            </Card>
             <Card title="Text" bordered={false} style={{ marginTop:5}}>
               <Welcome name="PASUPOL BUNSAEN" />
             </Card>
             <Card title="Map" bordered={false} style={{ marginTop:5}}>
               <Map />
+            </Card>
+            <Card title="Select Box" bordered={false} style={{ marginTop:5}}>
+              <SelectBox />
             </Card>
             <Card title="Login" bordered={false} style={{ marginTop:5 }}>
               <Login />
