@@ -7,7 +7,7 @@ export default class GetApi extends React.Component {
       get: []
     };
   }
-
+  
   componentWillMount() {
     axios
       .get(`https://hn.algolia.com/api/v1/search`)

@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 export default class DocumentsFieldSet extends React.Component{
   constructor(props){
     super(props);
